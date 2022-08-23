@@ -1,6 +1,5 @@
-import { useState, useRef } from "react"
+import { useState} from "react"
 import Modal from "../modal/Modal"
-import Box from '@mui/material/Box';
 
 import MicIcon from '@mui/icons-material/Mic';
 import VideocamOutlinedIcon from '@mui/icons-material/VideocamOutlined';
@@ -20,10 +19,10 @@ import "./Footer.css"
 
 const Footer = () => {
     const [checked, setChecked] = useState(false);
-    const containerRef = useRef(null);
 
     const handleChange = () => {
         setChecked((prev) => !prev);
+        
     };
 
     return( 
@@ -45,12 +44,11 @@ const Footer = () => {
                 <div className="footer__svg">
                     <PresentToAllIcon/>
                 </div>
-                <div className="footer__svg">
-                    <MoreVertIcon checked={checked} onClick={handleChange}>
-                    </MoreVertIcon>
+                <div className="footer__svg" checked={checked} onClick={handleChange}>
+                    <MoreVertIcon />
                 </div>
                     <div className="footer__svg svg__end">
-                        <CallEndIcon/>
+                        <CallEndIcon size="large"/>
                     </div>
                 </div>
                 <div className="footer__container container__svg">
@@ -59,8 +57,8 @@ const Footer = () => {
                     <div> <ChatOutlinedIcon /></div>
                     <div><CategoryOutlinedIcon /></div>
                 </div>
-                <Slide direction="up" in={checked} container={containerRef.current}>
-                    <Paper className="icon" elevation={4}>
+                <Slide className={!checked ? 'none' : 'icon'} direction="up" in={checked}>
+                    <Paper elevation={4}>
                         <Modal />
                     </Paper>
                 </Slide>

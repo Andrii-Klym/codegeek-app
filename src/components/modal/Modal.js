@@ -9,17 +9,22 @@ import FeedbackOutlinedIcon from '@mui/icons-material/FeedbackOutlined';
 import ReportGmailerrorredOutlinedIcon from '@mui/icons-material/ReportGmailerrorredOutlined';
 import SearchOffOutlinedIcon from '@mui/icons-material/SearchOffOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import NotificationContainer from 'react-notifications/lib/NotificationContainer';
+import {NotificationManager} from 'react-notifications';
 
 import './Modal.css'
+import 'react-notifications/lib/notifications.css';
 
 const Modal = () => {
+    const createNotification = (target) => NotificationManager.info(target.innerText, '', 3000);
+    
     return (
         <>
-            <div>
+        <div>
             <div className="icon__conrainer">
                 <ModeOutlinedIcon/>
                 <div>
-                    <p> Дошка для конференцій
+                    <p onClick={(e) => createNotification(e.target)}> Дошка для конференцій
                         <br />
                         Відкрити файл Jam
                     </p>
@@ -27,47 +32,48 @@ const Modal = () => {
             </div>
             <div className="icon__conrainer">
                 <RadioButtonCheckedOutlinedIcon/>
-                <p>Записувати зустріч</p>    
+                <p onClick={(e) => createNotification(e.target)}>Записувати зустріч</p>    
             </div>
         </div>
         <hr />
         <div className="icon__conrainer">
             <DashboardOutlinedIcon />
-            <p>Змінити макет</p>
+            <p onClick={(e) => createNotification(e.target)}>Змінити макет</p>
         </div>
         <div className="icon__conrainer">
             <CropFreeOutlinedIcon />
-            <p>Повноекранний режим</p>
+            <p onClick={(e) => createNotification(e.target)}>Повноекранний режим</p>
         </div>
         <div className="icon__conrainer">
             <AutoAwesomeIcon />
-            <p>Застосувати візуальні ефекти</p>
+            <p onClick={(e) => createNotification(e.target)}>Застосувати візуальні ефекти</p>
         </div>
         <div className="icon__conrainer">
             <ClosedCaptionOffOutlinedIcon />
-            <p>Увімкнути субтитри</p>
+            <p onClick={(e) => createNotification(e.target)}>Увімкнути субтитри</p>
         </div>
         <div className="icon__conrainer">
             <PhoneForwardedIcon />
-            <p>Використовувати телефон для передачі звуку</p>
+            <p onClick={(e) => createNotification(e.target)}>Використовувати телефон для передачі звуку</p>
         </div>
         <hr />
         <div className="icon__conrainer">
             <FeedbackOutlinedIcon />
-            <p>Повідомити про проблему</p>
+            <p onClick={(e) => createNotification(e.target)}>Повідомити про проблему</p>
         </div>
         <div className="icon__conrainer">
             <ReportGmailerrorredOutlinedIcon />
-            <p>Повідомити про порушення</p>
+            <p onClick={(e) => createNotification(e.target)}>Повідомити про порушення</p>
         </div>
         <div className="icon__conrainer">
             <SearchOffOutlinedIcon />
-            <p>Вирішення проблем і довідка</p>
+            <p onClick={(e) => createNotification(e.target)}>Вирішення проблем і довідка</p>
         </div>
         <div className="icon__conrainer">
             <SettingsOutlinedIcon />
-            <p>Налаштуваня</p>
+            <p onClick={(e) => createNotification(e.target)}>Налаштуваня</p>
         </div>
+        <NotificationContainer/>
         </>
     )
 }
