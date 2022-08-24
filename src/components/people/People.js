@@ -4,7 +4,6 @@ import Card from './Card'
 
 import "./People.css"
 
-
 const People = () => {
     const [items, setItems] = useState(data)
 
@@ -13,7 +12,8 @@ const People = () => {
             {items.map((item) => {
                 return (
                     <>
-                        <Card key={item.id} item={item} />
+                        {item.camera ? <div className="camera"><Card key={item.id} item={item} /></div> 
+                        : <Card key={item.id} item={item} />}
                     </> 
                 )
             })}

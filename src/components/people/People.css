@@ -14,7 +14,6 @@
 }
 
 .container__img {
-    background-image: url('../../resources/img/img_11.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,4 +39,33 @@
 #mute{
     background-color: black;
     border-radius: 50%;
+}
+
+.camera {
+    background-color: #3c4043;
+    border-radius: 10%;
+    position: relative;
+    width: 387px;
+    height: 249px;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera .container__img {
+    position: absolute;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.camera .container__text {
+    bottom: -41px;
+    left: -92px;
+}
+
+.camera #mute {
+    right: -96px;
+    top: -28px;
 }
