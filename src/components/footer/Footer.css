@@ -43,7 +43,7 @@ p {
 
 .icon { 
     position: absolute; 
-    top: 33%; 
+    top: 30vh; 
     left: 54%; 
     margin: 0 auto; 
     padding: 10px; 

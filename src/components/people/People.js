@@ -1,20 +1,18 @@
-import {useState} from 'react';
-import data from '../../data.json'
+import data from '../data/data.json'
 import Card from './Card'
 
 import "./People.css"
 
 const People = () => {
-    const [items, setItems] = useState(data)
 
     return (
         <div className="container">
-            {items.map((item) => {
+            {data.map((item) => {
                 return (
-                    <>
-                        {item.camera ? <div className="camera"><Card key={item.id} item={item} /></div> 
-                        : <Card key={item.id} item={item} />}
-                    </> 
+                    <div key={item.id}>
+                        {item.camera ? <div className="camera"><Card item={item} /></div> 
+                        : <Card item={item} />}
+                    </div> 
                 )
             })}
         </div>

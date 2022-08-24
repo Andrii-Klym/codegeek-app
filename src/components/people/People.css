@@ -16,14 +16,19 @@
 }
 
 .container__img {
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 447px;
-    height: 256px;
+    width: 23vw;
+    height: 27vh;
     margin: 8px;
     border-radius: 10px;
     position: relative;
+}
+
+.container__img:hover{
+    cursor: pointer;
 }
 
 .container__text {
@@ -47,12 +52,16 @@
     background-color: #3c4043;
     border-radius: 10%;
     position: relative;
-    width: 447px;
-    height: 256px;
+    width: 23vw;
+    height: 27vh;
     margin: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.camera:hover{
+    cursor: pointer;
 }
 
 .camera .container__img {

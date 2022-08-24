@@ -1,4 +1,4 @@
-import { useState} from "react"
+import { useState } from "react"
 import Modal from "../modal/Modal"
 
 import MicIcon from '@mui/icons-material/Mic';
