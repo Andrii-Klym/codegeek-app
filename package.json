@@ -1,6 +1,7 @@
 {
   "name": "codegeek-app",
   "version": "0.1.0",
+  "stack": "heroku-22",
   "engines": {
     "node": "14.17.1"
   },
