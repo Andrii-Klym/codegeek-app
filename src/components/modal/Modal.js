@@ -24,10 +24,10 @@ const Modal = () => {
             <div className="icon__conrainer">
                 <ModeOutlinedIcon/>
                 <div>
-                    <p onClick={(e) => createNotification(e.target)}> Дошка для конференцій
-                        <br />
-                        Відкрити файл Jam
+                    <p onClick={(e) => createNotification(e.target)}> 
+                        Дошка для конференцій
                     </p>
+                    <p id='small_text' onClick={(e) => createNotification(e.target)}>Відкрити файл Jam</p>
                 </div>
             </div>
             <div className="icon__conrainer">

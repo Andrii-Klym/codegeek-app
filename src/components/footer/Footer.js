@@ -22,7 +22,6 @@ const Footer = () => {
 
     const handleChange = () => {
         setChecked((prev) => !prev);
-        
     };
 
     return( 

@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Петро Гаврилюк",
+        "imagePath": "./resources/img/img_1.jpg",
+        "border": false,
+        "speak": false,
+        "muted": false,
+        "camera": false,
+        "ovner": false
+    },
+    {
+        "id": 2,
+        "name": "Іван Нелипа",
+        "imagePath": "../../resources/img/img_1.jpg",
+        "border": false,
+        "speak": false,
+        "muted": false,
+        "camera": false,
+        "ovner": false
+    },
+    {
+        "id": 3,
+        "name": "Тарас Тополя",
+        "imagePath": "./img/img_3.jpg",
+        "border": false,
+        "speak": false,
+        "muted": false,
+        "camera": false,
+        "ovner": false
+    },
+    {
+        "id": 4,
+        "name": "Петро Щур",
+        "imagePath": "./img/img_3.jpg",
+        "border": true,
+        "speak": true,
+        "muted": false,
+        "camera": false,
+        "ovner": false
+    },
+    {
+        "id": 5,
+        "name": "Інна Левищька",
+        "imagePath": "./resources/img/img_5.png",
+        "border": false,
+        "speak": false,
+        "muted": false,
+        "camera": false,
+        "ovner": false
+    },
+    {
+        "id": 6,
+        "name": "Андрій Кравець",
+        "imagePath": "./img/img_6.jpg",
+        "border": false,
+        "speak": false,
+        "muted": true,
+        "camera": true,
+        "ovner": false
+    },
+    {
+        "id": 7,
+        "name": "Ігор Заболотний",
+        "imagePath": "./img/img_7.jpg",
+        "border": false,
+        "speak": false,
+        "muted": false,
+        "camera": false,
+        "ovner": false
+    },
+    {
+        "id": 8,
+        "name": "Галина Звіробій",
+        "imagePath": "./img/img_8.jpg",
+        "border": false,
+        "speak": false,
+        "muted": false,
+        "camera": false,
+        "ovner": false
+    },
+    {
+        "id": 9,
+        "name": "Руслан Щебінь",
+        "imagePath": "./img/img_9.jpg",
+        "border": false,
+        "speak": false,
+        "muted": false,
+        "camera": false,
+        "ovner": false
+    },
+    {
+        "id": 10,
+        "name": "Максим Перебийніс",
+        "imagePath": "./img/img_10.jpg",
+        "border": false,
+        "speak": false,
+        "muted": false,
+        "camera": false,
+        "ovner": false
+    },
+    {
+        "id": 11,
+        "name": "Захар Гарбузенко",
+        "imagePath": "./img/img_11.jpg",
+        "border": false,
+        "speak": false,
+        "muted": false,
+        "camera": false,
+        "ovner": false
+    },
+    {
+        "id": 12,
+        "name": "Ви",
+        "imagePath": "./img/img_12.jpg",
+        "border": false,
+        "speak": false,
+        "muted": false,
+        "camera": false,
+        "ovner": true
+    }
+]
