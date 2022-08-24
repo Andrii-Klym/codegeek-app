@@ -4,12 +4,40 @@
 }
 
 .border {
-    border: 2px solid rgb(37, 150, 190);
+    border: 5px solid rgb(37, 150, 190);
 }
 
-img {
-    width: 380px;
-    height: 203px;
+.svg {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.container__img {
+    background-image: url('../../resources/img/img_11.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 387px;
+    height: 249px;
     margin: 8px;
-    border-radius: 18px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.container__text {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+#voice {
+    background-color: rgb(37, 150, 190);
+    border-radius: 50%;
+}
+
+#mute{
+    background-color: black;
+    border-radius: 50%;
 }

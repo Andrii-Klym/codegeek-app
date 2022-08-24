@@ -1,11 +1,9 @@
 import {useState} from 'react';
 import data from '../../data.json'
-
-
-import MicOffIcon from '@mui/icons-material/MicOff';
-import GraphicEqIcon from '@mui/icons-material/GraphicEq';
+import Card from './Card'
 
 import "./People.css"
+
 
 const People = () => {
     const [items, setItems] = useState(data)
@@ -14,12 +12,9 @@ const People = () => {
         <div className="container">
             {items.map((item) => {
                 return (
-                    <div style={{backgroundImage: `url(${item.itemPath})`}}>
-                        {item.speak ? <GraphicEqIcon /> : ''}
-                        {item.muted ? <MicOffIcon /> : ''}
-                        <img src={item.itemPath} className={item.border ? 'border' : ''} alt='' />
-                        <p>{item.name}</p>
-                    </div>   
+                    <>
+                        <Card key={item.id} item={item} />
+                    </> 
                 )
             })}
         </div>
