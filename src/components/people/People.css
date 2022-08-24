@@ -1,6 +1,8 @@
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .border {
@@ -17,8 +19,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 387px;
-    height: 249px;
+    width: 447px;
+    height: 256px;
     margin: 8px;
     border-radius: 10px;
     position: relative;
@@ -45,8 +47,8 @@
     background-color: #3c4043;
     border-radius: 10%;
     position: relative;
-    width: 387px;
-    height: 249px;
+    width: 447px;
+    height: 256px;
     margin: 8px;
     display: flex;
     justify-content: center;

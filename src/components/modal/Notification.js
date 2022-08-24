@@ -1,8 +1,8 @@
 
 import NotificationContainer from 'react-notifications/lib/NotificationContainer';
 import {NotificationManager} from 'react-notifications';
-import 'react-notifications/lib/notifications.css';
 
+import 'react-notifications/lib/notifications.css';
 
 function App() {
 
