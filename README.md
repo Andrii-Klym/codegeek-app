@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# you can visit the deployed server using this link
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://codegeek-app.herokuapp.com/
 
 ## Available Scripts
 
